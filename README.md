@@ -39,6 +39,40 @@ View the live project here.
 This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
 
 
+Project Example Idea 1
+Create a site that calls on the Google Maps API and/or the Google Places API (or similar) to allow users to search for their next holiday destination.
+
+External user’s goal:
+Find the best holiday destination for their needs.
+
+Site owner's goal:
+Get users to choose a travel package from this site and/or from its sponsors.
+
+Potential features to include:
+Connect to an API that suits your needs, we recommend Programmable Web as a way to search for APIs.
+
+Display information about different cities that are potential holiday destinations.
+
+Allow users to select/search a city and see a map with relevant attractions, accommodations and restaurants.
+
+Provide results in a manner that is visually appealing and user friendly.
+
+
+Project Example Idea 2
+Build a memory game
+
+External user’s goal:
+Have fun playing the game.
+
+Site owner's goal:
+Same as the external users - make a game that you'd enjoy playing yourself.
+Potential features to include:
+Build a simple single-player pattern-matching memory game.
+
+We encourage you to create your own game, by choosing a set of visual and/or auditory patterns that increase in complexity over the course of the game and challenge the player. Games that you could look at for inspiration include Simon and Bop It.
+
+Provide users with clear explanations on how to play the game and with clear feedback on how they're doing at any stage
+
 User Experience (UX)
 
 User stories

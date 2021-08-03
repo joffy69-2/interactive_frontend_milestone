@@ -32,73 +32,145 @@ To log into the Heroku toolbelt CLI:
 
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
 
-## Release History
+Code Institute Website
+View the live project here.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+User Experience (UX)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+User stories
+First Time Visitor Goals
+Returning Visitor Goals
+Frequent User Goals
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Design
+Colour Scheme
+Typography
+Imagery
+Wireframes
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Features
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Interactive elements
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Technologies Used
+Languages Used
+Frameworks, Libraries & Programs Used
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Testing
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+W3C Markup Validator - Results
+W3C CSS Validator - Results
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Testing User Stories from User Experience (UX) Section
+First Time Visitor Goals
+As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
+The main points are made immediately with the hero image
+The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
+As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
+At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
+On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
+As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
+The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
+At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
+Returning Visitor Goals
+As a Returning Visitor, I want to find the new programming challenges or hackathons.
 
-------
+These are clearly shown in the banner message.
+They will be directed to a page with another hero image and call to action.
+As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
 
-## FAQ about the uptime script
+The navigation bar clearly highlights the "Contact Us" Page.
+Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
+The footer contains links to the organisations Facebook, Twitter and Instagram page as well as the organization's email.
+Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
+The email button is set up to automatically open up your email app and autofill there email address in the "To" section.
+As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
 
-**Why have you added this script?**
+The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
+Alternatively, the user can scroll to the bottom of the Home page to find the Facebook Group redirect card and can easily join by clicking the "Join Now!" button which like any external link, will open in a new tab to ensure they can get back to the website easily.
+If the user is on the "Our Favourites" page they will also be greeted with a call to action button to invite the user to the Facebook group. The user is incentivized as they are told there is a weekly favourite product posted in the group.
+Frequent User Goals
+As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+The user would already be comfortable with the website layout and can easily click the banner message.
+As a Frequent User, I want to check to see if there are any new blog posts.
 
-**How will this affect me?**
+The user would already be comfortable with the website layout and can easily click the blog link
+As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+At the bottom of every page their is a footer which content is consistent throughout all pages.
+To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
+There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
+Further Testing
+The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+A large amount of testing was done to ensure that all pages were linking correctly.
+Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+Known Bugs
+On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
+A white gap can be seen to the right of the footer and navigation bar as a result.
+On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Deployment
+GitHub Pages
+The project was deployed to GitHub Pages using the following steps...
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Log in to GitHub and locate the GitHub Repository
+At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+Alternatively Click Here for a GIF demonstrating the process starting from Step 2.
+Scroll down the Settings page until you locate the "GitHub Pages" Section.
+Under "Source", click the dropdown called "None" and select "Master Branch".
+The page will automatically refresh.
+Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+Forking the GitHub Repository
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-**So….?**
+Log in to GitHub and locate the GitHub Repository
+At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+You should now have a copy of the original repository in your GitHub account.
+Making a Local Clone
+Log in to GitHub and locate the GitHub Repository
+Under the repository name, click "Clone or download".
+To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+Open Git Bash
+Change the current working directory to the location where you want the cloned directory to be made.
+Type git clone, and then paste the URL you copied in Step 3.
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+Press Enter. Your local clone will be created.
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+Click Here to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Credits
+Code
+The full-screen hero image code came from this StackOverflow post
 
-**Can I opt out?**
+Bootstrap4: Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+MDN Web Docs : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found Here
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Content
+All content was written by the developer.
 
-**Anything more?**
+Psychological properties of colours text in the README.md was found here
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Media
+All Images were created by the developer.
+Acknowledgements
+My Mentor for continuous helpful feedback.
 
----
-
-Happy coding!
+Tutor support at Code Institute for their support.

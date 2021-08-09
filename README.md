@@ -1,63 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome joffy69,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-
-Code Institute Website
-View the live project here.
-
-This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
-
-
-Project Example Idea 1
-Create a site that calls on the Google Maps API and/or the Google Places API (or similar) to allow users to search for their next holiday destination.
-
-External user’s goal:
-Find the best holiday destination for their needs.
-
-Site owner's goal:
-Get users to choose a travel package from this site and/or from its sponsors.
-
-Potential features to include:
-Connect to an API that suits your needs, we recommend Programmable Web as a way to search for APIs.
-
-Display information about different cities that are potential holiday destinations.
-
-Allow users to select/search a city and see a map with relevant attractions, accommodations and restaurants.
-
-Provide results in a manner that is visually appealing and user friendly.
-
-
 Project Example Idea 2
 Build a memory game
 
@@ -74,6 +14,24 @@ We encourage you to create your own game, by choosing a set of visual and/or aud
 Provide users with clear explanations on how to play the game and with clear feedback on how they're doing at any stage
 
 User Experience (UX)
+### 1. Strategy plane - what are you aiming for and for who
+### 2. Scope plane - which features to include based on strategy
+|   feature   |   importance   |   feasability   |   totals  |
+|:------------|:---------------|:----------------|:----------|
+|history      |4               |1                |4          |
+|video/audio  |2               |2                |4          |
+|gallery      |1               |1                |1          |
+|shop         |1               |3                |3          |
+|gig list     |1               |2                |2          |
+|for hire     |2               |2                |4          |
+### 3. Structure plane - how is info structured and logically grouped
+### 4. Skeleton plane - info presentation
+### 5. Surface plane - finished product look like- colors, typography design element
+
+# Features
+### Existing Features
+### Features Left to Implement
+
 
 User stories
 First Time Visitor Goals
@@ -208,3 +166,93 @@ Acknowledgements
 My Mentor for continuous helpful feedback.
 
 Tutor support at Code Institute for their support.
+
+
+# Memory Game based on the '70s toy, Simon.
+
+
+NB 
+===
+Please also see:
+
+## UX
+
+> Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+
+> In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+
+> As a user type, I want to perform an action, so that I can achieve a goal.
+
+This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
+These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+
+1. 
+2. 
+3. 
+Wireframes 
+=
+
+
+
+---
+
+### 1. Strategy plane - what are you aiming for and for who
+   - single player memory game with colours and sound and a means of keeping score/clear feedback as to how the player is doing
+   - 1st game simply repeat the colours shown in order
+   - 2nd game introduce length of note eg ch 4 theme tune "long long short long"
+   - colour and sound
+
+### 2. Scope plane - which features to include based on strategy
+  
+### 3. Structure plane - how is info structured and logically grouped
+    
+  
+### 4. Skeleton plane - info presentation
+   
+
+### 5. Surface plane - finished product look like- colors, typography design element
+    
+---
+# Features
+
+### Existing Features
+
+    Five features/sections and a landing page/image
+    contact form
+
+
+### Features Left to Implement
+
+
+
+---
+
+Technologies Used
+=
+-
+
+---
+Deployment
+=
+- This project has been deployed to github pages.
+   
+
+Credits
+=
+
+1. Content
+- All the text on the site is my own work. Any resemblance to people (real or fictional, alive or dead) is accidental.
+
+2. Media
+- The photos used in this site were obtained from ...
+ 
+
+- The audio files used in this site were obtained from ...
+    
+
+    
+3. Acknowledgements
+    
+
+4. Code 
+    

@@ -15,15 +15,16 @@ Provide users with clear explanations on how to play the game and with clear fee
 
 User Experience (UX)
 ### 1. Strategy plane - what are you aiming for and for who
+- This is a memory game in the style of the '70s toy, Simon
 ### 2. Scope plane - which features to include based on strategy
-|   feature   |   importance   |   feasability   |   totals  |
-|:------------|:---------------|:----------------|:----------|
-|history      |4               |1                |4          |
-|video/audio  |2               |2                |4          |
-|gallery      |1               |1                |1          |
-|shop         |1               |3                |3          |
-|gig list     |1               |2                |2          |
-|for hire     |2               |2                |4          |
+|   feature              |   importance   |   feasability   |   totals  |
+|:-----------------------|:---------------|:----------------|:----------|
+|instructions            |4               |4                |16         |
+|video/audio             |5               |4                |20         |
+|score                   |5               |3                |15         |
+|second game             |1               |3                |3          |
+|all time highest/top ten|1               |1                |1          |
+
 ### 3. Structure plane - how is info structured and logically grouped
 ### 4. Skeleton plane - info presentation
 ### 5. Surface plane - finished product look like- colors, typography design element

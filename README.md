@@ -261,3 +261,4 @@ Credits
    https://stackoverflow.com/questions/3746725/how-to-create-an-array-containing-1-n
    https://www.educba.com/random-number-generator-in-javascript/
    https://www.ma-no.org/en/programming/javascript/how-to-populate-an-array-with-random-numbers-in-javascript
+   https://spin.atomicobject.com/2015/07/14/css-responsive-square/

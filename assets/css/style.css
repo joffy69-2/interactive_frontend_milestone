@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
 .center {
     margin: 0;
     position: absolute;
@@ -6,3 +12,4 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+

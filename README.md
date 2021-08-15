@@ -257,3 +257,5 @@ Credits
 
 4. Code 
    https://www.w3schools.com/howto/howto_css_center_button.asp 
+   https://www.tutorialspoint.com/How-do-I-call-a-JavaScript-function-on-page-load
+   https://stackoverflow.com/questions/3746725/how-to-create-an-array-containing-1-n

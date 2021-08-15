@@ -50,7 +50,7 @@ body {
   }
 
   .yellow:hover{
-    background-color: lightsalmon;á
+    background-color: lightsalmon;
   }
 
-  /*animate css*/
+  /*animate css now i need to connect this to the game_array to produce play_array*/

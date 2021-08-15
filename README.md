@@ -259,3 +259,5 @@ Credits
    https://www.w3schools.com/howto/howto_css_center_button.asp 
    https://www.tutorialspoint.com/How-do-I-call-a-JavaScript-function-on-page-load
    https://stackoverflow.com/questions/3746725/how-to-create-an-array-containing-1-n
+   https://www.educba.com/random-number-generator-in-javascript/
+   https://www.ma-no.org/en/programming/javascript/how-to-populate-an-array-with-random-numbers-in-javascript

@@ -3,7 +3,7 @@ function generate_array() {
     //generates an array of length set by user input on index page and fills it with random numbers from 1 to 4
     //generate an empty player array with the same length
     let startlev = document.getElementById('g-level').value;
-
+//we will need some logic to get a new startlev in 
     let player_array = new Array();
     player_array.length = startlev;
     //https://www.ma-no.org/en/programming/javascript/how-to-populate-an-array-with-random-numbers-in-javascript

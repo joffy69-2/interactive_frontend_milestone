@@ -1,26 +1,26 @@
-function generate_array() {
+function generateArray() {
 
     //generates an array of length set by user input on index page and fills it with random numbers from 1 to 4
     //generate an empty player array with the same length
     let startlev = document.getElementById('g-level').value;
 //we will need some logic to get a new startlev in 
-    let player_array = new Array();
-    player_array.length = startlev;
+    let playerArray = new Array();
+    playerArray.length = startlev;
     //https://www.ma-no.org/en/programming/javascript/how-to-populate-an-array-with-random-numbers-in-javascript
-    let game_array = Array.from({
+    let gameArray = Array.from({
         length: startlev
         //https://www.educba.com/random-number-generator-in-javascript/
 
     }, () => Math.floor(Math.random() * (4)) + 1);
-    game_array.forEach(function (item, index, arr) {
+    gameArray.forEach(function (item, index, arr) {
         console.log(item);
     });
-    return {game_array, player_array};
+    return {gameArray, playerArray};
 }
 
 
 
-function play_array() {
+function playArray() {
     console.log('hello world');
 
 

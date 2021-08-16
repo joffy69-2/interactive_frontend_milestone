@@ -15,13 +15,23 @@ function generate_array() {
     game_array.forEach(function (item, index, arr) {
         console.log(item);
     });
-    return game_array, player_array;
+    return {game_array, player_array};
 }
+
 
 
 function play_array() {
     console.log('hello world');
-    alert('test');
+
+
+
+    //console.log(arrays.game_array);
+   // game_array.forEach(myfunction);
+
+   // function myfunction(value, index, array){
+   //     alert('test');
+        
+   // }
 }
 
 
@@ -29,3 +39,21 @@ function play_array() {
 
 //because id=start is not on game and id=play is not on index there are type errors
 //at some point will be saying if (game_array===player_array) success
+
+/*You could call firstFunction from secondFunction :
+
+function secondFunction() {
+    alert(firstFunction());
+}
+Or use a global variable to host the result of firstFunction :
+
+var v = firstFunction();
+function secondFunction() { alert(v); }
+Or pass the result of firstFunction as a parameter to secondFunction :
+
+function secondFunction(v) { alert(v); }
+secondFunction(firstFunction());
+Or pass firstFunction as a parameter to secondFunction :
+
+function secondFunction(fn) { alert(fn()); }
+secondFunction(firstFunction);*/

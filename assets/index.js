@@ -1,3 +1,6 @@
 document.getElementById("start").onclick = function () {
-    generate_array()
+    
+    let arrays = generate_array();
+    const arrayJSON = JSON.stringify(arrays);
+    localStorage.setItem("gameJSON", arrayJSON);
 };

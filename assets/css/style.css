@@ -26,6 +26,7 @@ body {
 
   .red{
     background-color: red;
+    transition: background-color 2s;
   }
   .red:hover{
     background-color: bisque;

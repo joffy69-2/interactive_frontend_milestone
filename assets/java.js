@@ -17,16 +17,17 @@ function generateArray() {
     //}
     //)
     ;
-    return {gameArray, playerArray};
+    return [gameArray, playerArray];
 }
 
 
 
 function playArray(gameArray) {
     //https://www.telerik.com/blogs/how-do-i-pause-execution-in-javascript
+    alert(gameArray);
     gameArray.forEach(element =>{
         switch (element) {
-        case 1: 
+        case '1': 
             function chgGr(){
                 document.getElementById("squ1").style="background-color:lawngreen";
             }
@@ -36,7 +37,7 @@ function playArray(gameArray) {
            chgGr();
            setTimeout(chgGrB(), 5000);
             
-        case 2: 
+        case '2': 
             function chgYe(){
                 document.getElementById("squ2").style="background-color:lightsalmon";
             }
@@ -45,7 +46,7 @@ function playArray(gameArray) {
             }
            chgYe();
            setTimeout(chgYeB(), 5000);
-        case 3: 
+        case '3': 
             function chgRe() {
                 document.getElementById("squ3").style="background-color:bisque";}
             function chgReB() {
@@ -53,7 +54,7 @@ function playArray(gameArray) {
             }
            chgRe();
            setTimeout(chgReB(), 5000);
-        case4: 
+        case '4': 
             function chBl(){
                 document.getElementById("squ4").style="background-color:cornflowerblue";}
             function chgBlB (){

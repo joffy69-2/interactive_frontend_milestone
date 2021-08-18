@@ -1,7 +1,11 @@
 document.getElementById("start").onclick = function () {
     
-    let arrays = generateArray();
-    const arrayJSON = JSON.stringify(arrays);
-    localStorage.setItem("gameJSON", arrayJSON);
+    let gArray =  generateArray();
+    
+    const gameJSON = JSON.stringify(gArray);
+    
+
+    localStorage.setItem("gameJSON", gameJSON);
+   
 
 }

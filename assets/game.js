@@ -5,4 +5,4 @@ document.getElementById("play").onclick = function () {
     const test = gArray[0];
     playArray(test);
 
-};
+}

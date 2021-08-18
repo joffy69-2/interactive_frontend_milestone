@@ -12,48 +12,62 @@ function generateArray() {
         //https://www.educba.com/random-number-generator-in-javascript/
 
     }, () => Math.floor(Math.random() * (4)) + 1);
-    gameArray.forEach(function (item, index, arr) {
-        console.log(item);
-    });
+    //gameArray.forEach(function (item, index, arr) {
+    //  console.log(item);
+    //}
+    //)
+    ;
     return {gameArray, playerArray};
 }
 
 
 
-function playArray() {
-    console.log('hello world');
-
-
-
-    //console.log(arrays.game_array);
-   // game_array.forEach(myfunction);
-
-   // function myfunction(value, index, array){
-   //     alert('test');
+function playArray(gameArray) {
+    //https://www.telerik.com/blogs/how-do-i-pause-execution-in-javascript
+    gameArray.forEach(element =>{
+        switch (element) {
+        case 1: 
+            function chgGr(){
+                document.getElementById("squ1").style="background-color:lawngreen";
+            }
+            function chgGrB(){
+                document.getElementById("squ1").style="background-color:green";
+            }
+           chgGr();
+           setTimeout(chgGrB(), 5000);
+            
+        case 2: 
+            function chgYe(){
+                document.getElementById("squ2").style="background-color:lightsalmon";
+            }
+            function chgYeB(){
+                document.getElementById("squ2").style="background-color:yellow";
+            }
+           chgYe();
+           setTimeout(chgYeB(), 5000);
+        case 3: 
+            function chgRe() {
+                document.getElementById("squ3").style="background-color:bisque";}
+            function chgReB() {
+                document.getElementById("squ3").style="background-color:red";
+            }
+           chgRe();
+           setTimeout(chgReB(), 5000);
+        case4: 
+            function chBl(){
+                document.getElementById("squ4").style="background-color:cornflowerblue";}
+            function chgBlB (){
+                document.getElementById("squ4").style="background-color:blue";
+            }
+            chgBl();
+           setTimeout(chgBlB(), 5000);
+        default: 
+            alert("no game data!!");
+        }
+    })
         
-   // }
+
+       //alert('test1');
+        
+
 }
-
-
-
-
-//because id=start is not on game and id=play is not on index there are type errors
-//at some point will be saying if (game_array===player_array) success
-
-/*You could call firstFunction from secondFunction :
-
-function secondFunction() {
-    alert(firstFunction());
-}
-Or use a global variable to host the result of firstFunction :
-
-var v = firstFunction();
-function secondFunction() { alert(v); }
-Or pass the result of firstFunction as a parameter to secondFunction :
-
-function secondFunction(v) { alert(v); }
-secondFunction(firstFunction());
-Or pass firstFunction as a parameter to secondFunction :
-
-function secondFunction(fn) { alert(fn()); }
-secondFunction(firstFunction);*/

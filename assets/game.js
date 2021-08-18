@@ -1,8 +1,11 @@
 document.getElementById("play").onclick = function () {
     
-    let gArray = JSON.parse(localStorage.getItem("gameJSON"));
-    alert("test");
-    console.log(gArray[0]);
+    const gArray = JSON.parse(localStorage.getItem("gameJSON"));
+    //let test =localStorage.getItem("testJSON");
+    test = Array.isArray(Array.from(gArray));
+    alert(test);
     
-    playArray();
+    
+    
+    //playArray(gArray);
 };

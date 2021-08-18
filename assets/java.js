@@ -42,6 +42,9 @@ function playArray(gameArray) {
                 function test() {
                     document.getElementById('sq1').innerHTML = '<h3>square 1</h3>';
                 }
+                //
+                //Maybe I can use transitions to produce a reasonable time for the game
+                //
                 /*async function cG() {
                     chgGr();
                     await new Promise(res => {

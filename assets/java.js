@@ -17,7 +17,8 @@ function generateArray() {
     //}
     //)
 
-    return [gameArray, playerArray];
+    return [gameArray, playerArray]; //needed to ensure the data goes into localstorage
+   
 }
 
 
@@ -120,9 +121,16 @@ function playArray(gameArray) {
 
 }
 
-function fillPlayerarray(array) {
-
+function fillPlayerarray(index, num) {
+   if (index<=playerArray.length) {
+     playerArray[index] = num;
+   } else {
+      //call compare arrays
+      compareArrays();
+   }
     
-   
+}
 
+function compareArrays(){
+    
 }

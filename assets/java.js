@@ -44,7 +44,7 @@ function playArray(gameArray) {
                 }
                 //
                 //Maybe I can use transitions to produce a reasonable time for the game
-                //
+                //how about eventhandler on end of transition
                 /*async function cG() {
                     chgGr();
                     await new Promise(res => {
@@ -116,5 +116,10 @@ function playArray(gameArray) {
         }
     })
 
+        
 
+}
+
+function fillPlayerarray(array){
+    alert(array);
 }

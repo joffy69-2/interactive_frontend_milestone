@@ -11,7 +11,7 @@ function generateArray() {
         length: startlev
         //https://www.educba.com/random-number-generator-in-javascript/
 
-    }, () => Math.floor(Math.random() * (4)) + 1);
+    }, () => `sq` + (Math.floor(Math.random() * (4)) + 1));
     //gameArray.forEach(function (item, index, arr) {
     //  console.log(item);
     //}
@@ -132,5 +132,5 @@ function fillPlayerarray(index, num) {
 }
 
 function compareArrays(){
-    
+
 }

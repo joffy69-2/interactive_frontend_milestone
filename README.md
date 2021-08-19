@@ -265,3 +265,4 @@ Credits
    https://www.telerik.com/blogs/how-do-i-pause-execution-in-javascript
    https://blog.devgenius.io/how-to-make-javascript-sleep-or-wait-d95d33c99909
    https://code-boxx.com/pause-javascript/
+   https://www.geeksforgeeks.org/how-to-get-the-id-of-the-clicked-button-using-javascript-jquery/

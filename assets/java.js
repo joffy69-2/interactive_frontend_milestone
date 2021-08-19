@@ -55,7 +55,7 @@ function playArray(gameArray) {
                 cG();*/
                 function delay(ms) {
                     return new Promise(resolve => setTimeout(resolve, ms));
-                  }
+                }
                 chgGr();
                 delay(3000).then(() => chgGrB);
                 break;
@@ -116,10 +116,13 @@ function playArray(gameArray) {
         }
     })
 
-        
+
 
 }
 
-function fillPlayerarray(array){
-    alert(array);
+function fillPlayerarray(array) {
+
+    
+   
+
 }

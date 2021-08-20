@@ -27,7 +27,13 @@ function playArray(gameArray) {
     //https://www.telerik.com/blogs/how-do-i-pause-execution-in-javascript
     alert(Array.isArray(gameArray));
     alert('this should be the pattern, switch statement didnt work');
-}
+    function readDict(book){
+        alert('book')
+    }
+    gameArray.forEach(readDict);
+
+    }
+
 
 function playerArray() {
     var pArray = [];//empty array to hold player attempt

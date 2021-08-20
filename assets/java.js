@@ -125,6 +125,7 @@ function playerArray() {
     var pArray = [];
     var pAl = pArray.length;
     var testLength = JSON.parse(localStorage.getItem("gameJSON"))[0].length;
+    const gArray = JSON.parse(localStorage.getItem("gameJSON"))[0];
     //https://code-institute-room.slack.com/team/U01N3V9MFAP
 
     $('.square').click(function (e) {
@@ -133,14 +134,19 @@ function playerArray() {
             alert('testtest'); //this is running
             alert(t); //wow, t is running too
 
-            pArray.push(t);
-            pAl++;
+            pArray.push(t);//add id of box to array
+            pAl++;//increment length for comparison by one
             alert(pArray);
             alert(pArray.length);
             alert(testLength);
 
             if (pAl===testLength){
-                return pArray;
+                if(JSON.stringify(pArray) === JSON.stringify(gArray)){
+                    alert('success');
+                } else {
+                    alert('failure');
+                }
+                //return pArray;//return array for testing
             }
     });
 

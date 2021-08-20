@@ -266,3 +266,4 @@ Credits
    https://blog.devgenius.io/how-to-make-javascript-sleep-or-wait-d95d33c99909
    https://code-boxx.com/pause-javascript/
    https://www.geeksforgeeks.org/how-to-get-the-id-of-the-clicked-button-using-javascript-jquery/
+   https://code-institute-room.slack.com/team/U01N3V9MFAP greg huddle

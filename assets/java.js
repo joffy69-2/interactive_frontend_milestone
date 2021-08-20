@@ -18,7 +18,7 @@ function generateArray() {
     //)
 
     return [gameArray, playerArray]; //needed to ensure the data goes into localstorage
-   
+
 }
 
 
@@ -121,16 +121,46 @@ function playArray(gameArray) {
 
 }
 
-function fillPlayerarray(index, num) {
-   if (index<=playerArray.length) {
-     playerArray[index] = num;
-   } else {
-      //call compare arrays
-      compareArrays();
-   }
+function playerArray() {
+    var pArray = [];
+    var pAl = pArray.length;
+    var testLength = JSON.parse(localStorage.getItem("gameJSON"))[0].length;
+    //https://code-institute-room.slack.com/team/U01N3V9MFAP
+
+    $('.square').click(function (e) {
+        
+            let t = e.target.id;
+            alert('testtest'); //this is running
+            alert(t); //wow, t is running too
+
+            pArray.push(t);
+            pAl++;
+            alert(pArray);
+            alert(pArray.length);
+            alert(testLength);
+
+            if (pAl===testLength){
+                return pArray;
+            }
+    });
+
+
     
+    //we have to stop when pArray.length === gameArray.length
 }
 
-function compareArrays(){
-
+function compareArrays(pArray, gameArray) {
+    //when pArray.length==gArray.length
+    //now need a test for length of arrays and contents of arrays
+    //https://www.w3docs.com/snippets/javascript/how-to-compare-two-javascrpt-arrays.html
+    /*let firstArr = [1, 2, [3, 4, 5]];
+    let secondArr = [1, 2, [3, 4, 5]];
+    let isEqual = JSON.stringify(firstArr) === JSON.stringify(secondArr);
+    console.log(isEqual);*/
+    let isEqual = JSON.stringify(pArray) === JSON.stringify(gameArray);
+    if (isEqual === true) {
+        return 'success';
+    } else {
+        return 'failure';
+    }
 }

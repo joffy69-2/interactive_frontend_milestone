@@ -26,119 +26,27 @@ function generateArray() {
 function playArray(gameArray) {
     //https://www.telerik.com/blogs/how-do-i-pause-execution-in-javascript
     alert(Array.isArray(gameArray));
-    gameArray.forEach(element => {
-        switch (element) {
-
-            //https://blog.devgenius.io/how-to-make-javascript-sleep-or-wait-d95d33c99909
-            //https://code-boxx.com/pause-javascript/
-            case 1:
-                function chgGr() {
-                    document.getElementById("sq1").style = "background-color:lawngreen";
-                };
-
-                function chgGrB() {
-                    document.getElementById("sq1").style = "background-color:green";
-                };
-
-                function test() {
-                    document.getElementById('sq1').innerHTML = '<h3>square 1</h3>';
-                }
-                //
-                //Maybe I can use transitions to produce a reasonable time for the game
-                //how about eventhandler on end of transition
-                /*async function cG() {
-                    chgGr();
-                    await new Promise(res => {
-                        setTimeout(res, 5000);
-                    });
-                    chgGrB();
-                }
-                cG();*/
-                function delay(ms) {
-                    return new Promise(resolve => setTimeout(resolve, ms));
-                }
-                chgGr();
-                delay(3000).then(() => chgGrB);
-                break;
-
-            case 2:
-                function chgYe() {
-                    document.getElementById("sq2").style = "background-color:lightsalmon";
-                };
-
-                function chgYeB() {
-                    document.getElementById("sq2").style = "background-color:yellow";
-                };
-                async function cY() {
-                    chgYe();
-                    await new Promise(res => {
-                        setTimeout(res, 5000);
-                    });
-                    chgYeB();
-                }
-                cY();
-                break;
-            case 3:
-                function chgRe() {
-                    document.getElementById("sq3").style = "background-color:bisque";
-                };
-
-                function chgReB() {
-                    document.getElementById("sq3").style = "background-color:red";
-                };
-                async function cR() {
-                    chgRe();
-                    await new Promise(res => {
-                        setTimeout(res, 5000);
-                    });
-                    chgReB();
-                }
-                cR();
-                break;
-            case 4:
-                function chgBl() {
-                    document.getElementById("sq4").style = "background-color:cornflowerblue";
-                };
-
-                function chgBlB() {
-                    document.getElementById("sq4").style = "background-color:blue";
-                };
-                async function cB() {
-                    chgBl();
-                    await new Promise(res => {
-                        setTimeout(res, 5000);
-                    });
-                    chgBlB();
-                }
-                cB();
-                break;
-            default:
-                alert("no game data!!");
-        }
-    })
-
-
-
+    alert('this should be the pattern, switch statement didnt work');
 }
 
 function playerArray() {
-    var pArray = [];
-    var pAl = pArray.length;
-    var testLength = JSON.parse(localStorage.getItem("gameJSON"))[0].length;
-    const gArray = JSON.parse(localStorage.getItem("gameJSON"))[0];
+    var pArray = [];//empty array to hold player attempt
+    var pAl = pArray.length; //for comparison with length of gamearray
+    var testLength = JSON.parse(localStorage.getItem("gameJSON"))[0].length;//for comparison with length of pAl
+    const gArray = JSON.parse(localStorage.getItem("gameJSON"))[0];//game data
     //https://code-institute-room.slack.com/team/U01N3V9MFAP
-
+    //event listener (click) for all elements class 'square' from Greg Huddle
     $('.square').click(function (e) {
         
             let t = e.target.id;
-            alert('testtest'); //this is running
-            alert(t); //wow, t is running too
+            //alert('testtest'); //this is running
+            //alert(t); //wow, t is running too
 
             pArray.push(t);//add id of box to array
-            pAl++;//increment length for comparison by one
-            alert(pArray);
-            alert(pArray.length);
-            alert(testLength);
+            pAl++;//increment length for comparison, by one
+            //alert(pArray);
+            //alert(pArray.length);
+            //alert(testLength);
 
             if (pAl===testLength){
                 if(JSON.stringify(pArray) === JSON.stringify(gArray)){
@@ -146,27 +54,22 @@ function playerArray() {
                 } else {
                     alert('failure');
                 }
-                //return pArray;//return array for testing
             }
     });
 
 
-    
-    //we have to stop when pArray.length === gameArray.length
 }
 
 function compareArrays(pArray, gameArray) {
-    //when pArray.length==gArray.length
-    //now need a test for length of arrays and contents of arrays
+ 
     //https://www.w3docs.com/snippets/javascript/how-to-compare-two-javascrpt-arrays.html
-    /*let firstArr = [1, 2, [3, 4, 5]];
-    let secondArr = [1, 2, [3, 4, 5]];
-    let isEqual = JSON.stringify(firstArr) === JSON.stringify(secondArr);
-    console.log(isEqual);*/
-    let isEqual = JSON.stringify(pArray) === JSON.stringify(gameArray);
+    let isEqual = JSON.stringify(pArray) === JSON.stringify(gameArray);//not sure the stringify is necessary for the data from localstorage
     if (isEqual === true) {
         return 'success';
     } else {
         return 'failure';
     }
 }
+/*
+https://stackoverflow.com/questions/13667533/getelementsbyclassname-onclick-issue
+*/

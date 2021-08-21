@@ -82,9 +82,12 @@ function compareArrays(pArray, gameArray) {
 https://stackoverflow.com/questions/13667533/getelementsbyclassname-onclick-issue
 */
 
-function playAnimation(squ){
+function playAnimation(squ) {
     //look up animation css in dictionary
     //first get onclick in playerArray to work
     alert('animation');
 
+    $(document).ready(function () {
+        $("#" + squ).css("background-color", "lightgray");
+    });
 }

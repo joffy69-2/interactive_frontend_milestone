@@ -87,7 +87,15 @@ function playAnimation(squ) {
     //first get onclick in playerArray to work
     alert('animation');
 
+
+    // https://www.techiedelight.com/add-css-property-javascript/
     $(document).ready(function () {
         $("#" + squ).css("background-color", "lightgray");
+        
     });
+   
+    let a = dictAnimate.sq1.alert;
+    
+    alert(a);
+
 }

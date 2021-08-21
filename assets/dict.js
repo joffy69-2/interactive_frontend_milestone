@@ -6,7 +6,7 @@ const dictSquares = {
 };
 
 const dictAnimate = {
-    sq1: {html: `<h6>test</h6>`, alert: `alert('this alert fired from inside the dictionary)`,},
+    sq1: {css: `"background-color", "lightgray"`, alert: `this alert fired from inside the dictionary`,},
     //{sound: 'somesoundhere', css: 'background-color: lightgreen', setTime: 'setTimeout', css2: 'background-color: green'},
     sq2: {},
     sq3: {},
@@ -14,6 +14,8 @@ const dictAnimate = {
 }
 
 //sound, css, settiimeout, then to original color
+
+
 /*or maybe div {
   width: 100px;
   height: 100px;

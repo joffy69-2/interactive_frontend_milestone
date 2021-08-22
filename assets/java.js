@@ -12,10 +12,7 @@ function generateArray() {
         //https://www.educba.com/random-number-generator-in-javascript/
 
     }, () => `sq` + (Math.floor(Math.random() * (4)) + 1));
-    //gameArray.forEach(function (item, index, arr) {
-    //  console.log(item);
-    //}
-    //)
+    
 
     return [gameArray, playerArray]; //needed to ensure the data goes into localstorage
 
@@ -25,11 +22,9 @@ function generateArray() {
 
 function playArray(gameArray) {
     //https://www.telerik.com/blogs/how-do-i-pause-execution-in-javascript
-    alert(Array.isArray(gameArray));
-    alert('this should be the pattern, switch statement didnt work');
 
     function readDict(book) {
-        alert('book');
+        //alert('book');
     }
     gameArray.forEach(readDict);
     //now to put the alert in the dictionary
@@ -47,14 +42,9 @@ function playerArray() {
     $('.square').click(function (e) {
 
         let t = e.target.id;
-        //alert('testtest'); //this is running
-        //alert(t); //wow, t is running too
         playAnimation(t);
         pArray.push(t); //add id of box to array
         pAl++; //increment length for comparison, by one
-        //alert(pArray);
-        //alert(pArray.length);
-        //alert(testLength);
 
         if (pAl === testLength) {
             if (JSON.stringify(pArray) === JSON.stringify(gArray)) {
@@ -85,7 +75,7 @@ https://stackoverflow.com/questions/13667533/getelementsbyclassname-onclick-issu
 function playAnimation(squ) {
     //look up animation css in dictionary
     //first get onclick in playerArray to work
-    alert('animation');
+    //alert('animation');
 
 
     // https://www.techiedelight.com/add-css-property-javascript/

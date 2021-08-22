@@ -86,6 +86,6 @@ function playAnimation(squ) {
    
     let a = dictAnimate.sq1.alert;
     
-    alert(a);
+    //alert(a);
 
 }

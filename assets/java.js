@@ -24,7 +24,7 @@ function playArray(gameArray) {
     //https://www.telerik.com/blogs/how-do-i-pause-execution-in-javascript
 
     function readDict(book) {
-        //alert('book');
+        
     }
     gameArray.forEach(readDict);
     //now to put the alert in the dictionary
@@ -75,7 +75,7 @@ https://stackoverflow.com/questions/13667533/getelementsbyclassname-onclick-issu
 function playAnimation(squ) {
     //look up animation css in dictionary
     //first get onclick in playerArray to work
-    //alert('animation');
+    
 
 
     // https://www.techiedelight.com/add-css-property-javascript/

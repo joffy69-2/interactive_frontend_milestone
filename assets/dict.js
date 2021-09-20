@@ -6,11 +6,11 @@ const dictSquares = {
 };
 
 const dictAnimate = {
-    sq1: {css: `background-color`, css2: `lightgray`, alert: `this alert fired from inside the dictionary`,},
+    sq1: {css: `background-color`, css2: `lightgray`, alert: `this alert fired from inside the dictionary 1`,},
     //{sound: 'somesoundhere', css: 'background-color: lightgreen', setTime: 'setTimeout', css2: 'background-color: green'},
-    sq2: {},
-    sq3: {},
-    sq4: {},
+    sq2: {css: `background-color`, css2: `lightgray`, alert: `this alert fired from inside the dictionary 2`,},
+    sq3: {css: `background-color`, css2: `lightgray`, alert: `this alert fired from inside the dictionary 3`,},
+    sq4: {css: `background-color`, css2: `lightgray`, alert: `this alert fired from inside the dictionary 4`,},
 }
 
 //sound, css, settiimeout, then to original color

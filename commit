@@ -1,5 +1,5 @@
-working on/renamed showButtonchoice
+copy/paste from freecodecamp
 
-function has been renamed to better match
-actual functionality.
-Finally got the css to come from the dictionary
+think I've found the solution to setTimeOut
+the function you use as the first parameter cannot be a call
+you have to pass any parameters in settimeout not the function

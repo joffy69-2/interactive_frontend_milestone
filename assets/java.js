@@ -26,6 +26,7 @@ function playArray(gameArray) {
     function readDict(book) {
         
     }
+
     gameArray.forEach(readDict);
     //now to put the alert in the dictionary
     $(document).ready(function() {
@@ -40,8 +41,53 @@ function playArray(gameArray) {
           },200)
         });
       });
+      //https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/
+    /*  If you omit the second parameter, then setTimeout() will immediately execute the passed function without waiting at all.
+
+Finally, you can also pass additional parameters to the setTimeout() method that you can use inside the function as follows:
+
+function greeting(name, role){
+  console.log(`Hello, my name is ${name}`);
+  console.log(`I'm a ${role}`);
+}
+
+setTimeout(greeting, 3000, "Nathan", "Software developer");
+setTimeout() with additional parameters for the function
+Now you may be thinking, "why not just pass the parameters directly to the function?"
+
+This is because if you pass the parameters directly like this:
+
+setTimeout(greeting("Nathan", "Software developer"), 3000);
+Then JavaScript will immediately execute the function without waiting, because you're passing a function call and not a function reference as the first parameter.THIS NB NB
+
+This is why if you need to pass any parameters to the function, you need to pass them from the setTimeout() method.
+
+But honestly, I never found the need to pass additional parameters to the setTimeout() method in my role as a Software Developer, so don't worry about it 😉
+
+How to Cancel the setTimeout Method
+You can also prevent the setTimeout() method from executing the function by using the clearTimeout() method.
+
+The clearTimeout() method requires the id returned by setTimeout() to know which setTimeout() method to cancel:
+
+clearTimeout(id);
+clearTimeout() syntax
+Here's an example of the clearTimeout() method in action:
+
+const timeoutId = setTimeout(function(){
+    console.log("Hello World");
+}, 2000);
+
+clearTimeout(timeoutId);
+console.log(`Timeout ID ${timeoutId} has been cleared`);
+clearTimeout() method in action
+If you have multiple setTimeout() methods, then you need to save the IDs returned by each method call and then call clearTimeout() method as many times as needed to clear them all.
+
+Conclusion*/
        //need to write a function that "plays" an animation using settime=  1000 then 2000 etc for n times, getting the id of the square to change from memory
     //so, the function will construct javascript for n times, getting individual code from dictionary.
+    //for (n){
+    //    setTimeout(function showButtonchoice(n), 1000*n);
+   // }
 
     //function write_the_javascript (n"the level") {
     // for (run thru n){
@@ -50,6 +96,8 @@ function playArray(gameArray) {
     //      }   
     //} 
     // maybe this https://stackoverflow.com/questions/62032800/executing-keyframes-animation-in-js-or-jquery nested setTimeOuts or this https://animate.style/
+
+    //while 
 
 }
 

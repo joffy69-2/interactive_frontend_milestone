@@ -6,7 +6,7 @@ const dictSquares = {
 };
 
 const dictAnimate = {
-    sq1: {css: `"background-color", "lightgray"`, alert: `this alert fired from inside the dictionary`,},
+    sq1: {css: `background-color`, css2: `lightgray`, alert: `this alert fired from inside the dictionary`,},
     //{sound: 'somesoundhere', css: 'background-color: lightgreen', setTime: 'setTimeout', css2: 'background-color: green'},
     sq2: {},
     sq3: {},
@@ -26,6 +26,5 @@ const dictAnimate = {
 
 @keyframes example {
   0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}*/
+  50%  {background-color: pink;}
+  100% {background-color: red;}*/

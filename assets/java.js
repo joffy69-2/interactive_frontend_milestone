@@ -28,6 +28,28 @@ function playArray(gameArray) {
     }
     gameArray.forEach(readDict);
     //now to put the alert in the dictionary
+    $(document).ready(function() {
+        $('#play').click(function() {
+          var box = $('.square')
+          box.removeClass("show")
+          setTimeout(function(){
+              box.addClass("trans").addClass("show")
+              setTimeout(function(){
+                  box.removeClass("trans")
+              },100)
+          },200)
+        });
+      });
+       //need to write a function that "plays" an animation using settime=  1000 then 2000 etc for n times, getting the id of the square to change from memory
+    //so, the function will construct javascript for n times, getting individual code from dictionary.
+
+    //function write_the_javascript (n"the level") {
+    // for (run thru n){
+    //      animation_for_box_from_game_data_dictionary.settime(1000*n).append_to_javascript_file?
+    //      use it to write inline css
+    //      }   
+    //} 
+    // maybe this https://stackoverflow.com/questions/62032800/executing-keyframes-animation-in-js-or-jquery nested setTimeOuts or this https://animate.style/
 
 }
 
@@ -42,15 +64,18 @@ function playerArray() {
     $('.square').click(function (e) {
 
         let t = e.target.id;
-        playAnimation(t);
+        showButtonchoice(t);
         pArray.push(t); //add id of box to array
         pAl++; //increment length for comparison, by one
 
         if (pAl === testLength) {
             if (JSON.stringify(pArray) === JSON.stringify(gArray)) {
                 alert('success');
+                //add one to level now
+                //add one to score now
             } else {
                 alert('failure');
+                //try again?
             }
         }
     });
@@ -72,20 +97,30 @@ function compareArrays(pArray, gameArray) {
 https://stackoverflow.com/questions/13667533/getelementsbyclassname-onclick-issue
 */
 
-function playAnimation(squ) {
+function showButtonchoice(squ) {
     //look up animation css in dictionary
     //first get onclick in playerArray to work
     
 
 
     // https://www.techiedelight.com/add-css-property-javascript/
+    let c = dictAnimate.sq1.css;
+    alert(c);
     $(document).ready(function () {
-        $("#" + squ).css("background-color", "lightgray");
+        
+        $('#' + squ).css(c, dictAnimate.sq1.css2);
+        alert($('#' + squ).css(c));
+        alert(squ);
+        alert(c);
+        
         
     });
+    
    
-    let a = dictAnimate.sq1.alert;
+    //let a = dictAnimate.sq1.alert;
     
     //alert(a);
 
+   
 }
+

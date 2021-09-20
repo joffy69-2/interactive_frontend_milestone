@@ -26,6 +26,16 @@ body {
     padding-bottom: 100%;
   }
 
+  /*https://stackoverflow.com/questions/62032800/executing-keyframes-animation-in-js-or-jquery*/
+  .square.trans {
+    transition: all 0.7s;
+  }
+
+  .square.show{
+    opacity: 1;
+    transform: translate(0,0);
+  }
+
   .red{
     background-color: red;
     transition: background-color 2s;

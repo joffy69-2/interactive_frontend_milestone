@@ -27,11 +27,11 @@ body {
   }
 
   /*https://stackoverflow.com/questions/62032800/executing-keyframes-animation-in-js-or-jquery*/
-  .square.trans {
+  .trans {
     transition: all 0.7s;
   }
 
-  .square.show{
+  .show{
     opacity: 1;
     transform: translate(0,0);
   }

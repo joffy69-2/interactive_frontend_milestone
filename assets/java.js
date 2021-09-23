@@ -11,8 +11,8 @@ function generateArray() {
         length: startlev
         //https://www.educba.com/random-number-generator-in-javascript/
 
-    }, () => `sq` + (Math.floor(Math.random() * (4)) + 1));
-    
+    }, () => `#sq` + (Math.floor(Math.random() * (4)) + 1));
+
 
     return [gameArray, playerArray]; //needed to ensure the data goes into localstorage
 
@@ -23,27 +23,47 @@ function generateArray() {
 function playArray(gameArray) {
     //https://www.telerik.com/blogs/how-do-i-pause-execution-in-javascript
 
-    function readDict(book) {
-        
+
+    /*(gameArray).forEach((item, index) => {
+        setTimeout(playanimate, 1000*(index + 1), item);
+    });*/
+
+    function startAnimation(){
+        myVar = setTimeout(playanimate, 2000);
     }
 
-    gameArray.forEach((item, index) => {
-        setTimeout(playanimate, 1000(index+1), item);
-    });
+    startAnimation;
+    
+    function playanimate(item) {
+        alert(item);
+
+        //var box = $(`#`+item);
+        //alert(box);
+        //var box = '#sq1';
+      /*      $(item).removeClass("show");
+            setTimeout(function () {
+                $(item).addClass("trans").addClass("show")
+                setTimeout(function () {
+                    $(item).removeClass("trans")
+                }, 100)
+            }, 200)
+        */
+    }
+
     //now to put the alert in the dictionary
-    $(document).ready(function() {
-        $('#play').click(function() {
-          var box = $('.square')
-          box.removeClass("show")
-          setTimeout(function(){
-              box.addClass("trans").addClass("show")
-              setTimeout(function(){
-                  box.removeClass("trans")
-              },100)
-          },200)
+   /* $(document).ready(function () {
+        $('#play').click(function () {
+            var box = $('.square')
+            box.removeClass("show")
+            setTimeout(function () {
+                box.addClass("trans").addClass("show")
+                setTimeout(function () {
+                    box.removeClass("trans")
+                }, 100)
+            }, 200)
         });
-      });
-      //https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/
+    });*/
+    //https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/
     /*  If you omit the second parameter, then setTimeout() will immediately execute the passed function without waiting at all.
 
 Finally, you can also pass additional parameters to the setTimeout() method that you can use inside the function as follows:
@@ -85,11 +105,11 @@ clearTimeout() method in action
 If you have multiple setTimeout() methods, then you need to save the IDs returned by each method call and then call clearTimeout() method as many times as needed to clear them all.
 
 Conclusion*/
-       //need to write a function that "plays" an animation using settime=  1000 then 2000 etc for n times, getting the id of the square to change from memory
+    //need to write a function that "plays" an animation using settime=  1000 then 2000 etc for n times, getting the id of the square to change from memory
     //so, the function will construct javascript for n times, getting individual code from dictionary.
     //for (n){
     //    setTimeout(function showButtonchoice(n), 1000*n);
-   // }
+    // }
 
     //function write_the_javascript (n"the level") {
     // for (run thru n){
@@ -99,7 +119,9 @@ Conclusion*/
     //} 
     // maybe this https://stackoverflow.com/questions/62032800/executing-keyframes-animation-in-js-or-jquery nested setTimeOuts or this https://animate.style/
 
-    //while 
+    //while #
+
+    //https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout_param
 
 }
 
@@ -113,8 +135,9 @@ function playerArray() {
     //event listener (click) for all elements class 'square' from Greg Huddle
     $('.square').click(function (e) {
 
-        let t = e.target.id;
+        let t = `#` + e.target.id;
         showButtonchoice(t);
+        playArray(gArray);
         pArray.push(t); //add id of box to array
         pAl++; //increment length for comparison, by one
 
@@ -150,27 +173,26 @@ https://stackoverflow.com/questions/13667533/getelementsbyclassname-onclick-issu
 function showButtonchoice(squ) {
     //look up animation css in dictionary
     //first get onclick in playerArray to work
-    
+
 
 
     // https://www.techiedelight.com/add-css-property-javascript/
     let c = dictAnimate.sq1.css;
-    alert(c);
+    //alert(c);
     $(document).ready(function () {
-        
-        $('#' + squ).css(c, dictAnimate.sq1.css2);
-        alert($('#' + squ).css(c));
-        alert(squ);
-        alert(c);
-        
-        
+
+        //$(squ).css(c, dictAnimate.sq1.css2);
+        //alert($('#' + squ).css(c));
+        //alert(squ);
+        //alert(c);
+
+
     });
-    
-   
+
+
     //let a = dictAnimate.sq1.alert;
-    
+
     //alert(a);
 
-   
-}
 
+}

@@ -27,7 +27,9 @@ function playArray(gameArray) {
         
     }
 
-    gameArray.forEach(readDict);
+    gameArray.forEach((item, index) => {
+        setTimeout(playanimate, 1000(index+1), item);
+    });
     //now to put the alert in the dictionary
     $(document).ready(function() {
         $('#play').click(function() {

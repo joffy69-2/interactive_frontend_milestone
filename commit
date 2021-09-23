@@ -1,5 +1,4 @@
-copy/paste from freecodecamp
+something up with python3
 
-think I've found the solution to setTimeOut
-the function you use as the first parameter cannot be a call
-you have to pass any parameters in settimeout not the function
+cant get python3 -m http.server to produce 
+button to show website
